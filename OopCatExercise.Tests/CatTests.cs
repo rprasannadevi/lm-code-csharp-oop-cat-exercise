@@ -70,4 +70,11 @@ public class CatTests
         DomesticCat domesticCat = new();
         domesticCat.Eat().Should().Be("Purrrrrrr");
     }
+
+    [Test]
+    public void DomesticCat_Persian_Should_Make_A_Sound_When_Eat_Is_Called()
+    {
+        PersianDomesticCat persianDomesticCat = new();
+        persianDomesticCat.Eat().Should().Be("Purrrrrrr. It will do I Suppose");
+    }
 }
